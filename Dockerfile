@@ -11,8 +11,8 @@ ADD ./test /opt/apache-jmeter-4.0/bin/test
 
 COPY ./script.sh /opt/apache-jmeter-4.0/bin
 
-RUN chmod +x script.sh
-
 WORKDIR /opt/apache-jmeter-4.0/bin
+
+RUN chmod +x script.sh
 
 CMD [ "./script.sh" ]
